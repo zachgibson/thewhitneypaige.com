@@ -14,10 +14,6 @@ web/.htaccess
 db-sync
 sql-dump-*.sql
 
-# Dotenv
-.env.*
-!.env.example
-
 # Vendor (e.g. Composer)
 vendor/*
 !vendor/.gitkeep
