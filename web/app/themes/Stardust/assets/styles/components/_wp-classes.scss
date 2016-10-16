@@ -32,15 +32,15 @@
 
 // Captions
 .wp-caption {
-  // @extend .figure-img;
-  // @extend .img-fluid;
+  @extend .figure-img;
+  @extend .img-fluid;
 }
 .wp-caption-text {
-  // @extend .figure-caption;
+  @extend .figure-caption;
 }
 
 // Text meant only for screen readers
 .screen-reader-text {
-  // @extend .sr-only;
-  // @extend .sr-only-focusable;
+  @extend .sr-only;
+  @extend .sr-only-focusable;
 }

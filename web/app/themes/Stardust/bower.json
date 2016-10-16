@@ -7,7 +7,6 @@
   "license": "MIT",
   "private": true,
   "dependencies": {
-    "reset-css": "^2.2.0",
-    "instafeed.js": "^1.4.1"
+    "bootstrap": "git://github.com/twbs/bootstrap.git#v4.0.0-alpha.4"
   }
 }

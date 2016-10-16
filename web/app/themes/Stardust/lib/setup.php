@@ -84,7 +84,7 @@ function display_sidebar() {
     // The sidebar will NOT be displayed if ANY of the following return true.
     // @link https://codex.wordpress.org/Conditional_Tags
     is_404(),
-    // is_front_page(),
+    is_front_page(),
     is_page_template('template-custom.php'),
   ]);
 
@@ -96,7 +96,6 @@ function display_sidebar() {
  */
 function assets() {
   wp_enqueue_style('sage/css', Assets\asset_path('styles/main.css'), false, null);
-  wp_enqueue_script('sage/custom_js', Assets\asset_path('scripts/imagezoom.js'), ['sage/js'], null, true);
 
   if (is_single() && comments_open() && get_option('thread_comments')) {
     wp_enqueue_script('comment-reply');

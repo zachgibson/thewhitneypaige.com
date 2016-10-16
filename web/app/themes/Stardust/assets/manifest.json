@@ -12,11 +12,6 @@
       ],
       "main": true
     },
-    "imagezoom.js": {
-      "files": [
-        "scripts/imagezoom.js"
-      ]
-    },
     "customizer.js": {
       "files": [
         "scripts/customizer.js"
@@ -27,6 +22,6 @@
     }
   },
   "config": {
-    "devUrl": "http://thewhitneypaige.dev"
+    "devUrl": "http://example.dev"
   }
 }

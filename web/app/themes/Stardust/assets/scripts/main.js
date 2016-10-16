@@ -11,17 +11,6 @@
  * ======================================================================== */
 
 (function($) {
-  var u_id = parseInt('1428121');
-    var token = '1428121.9b2b91b.62214e2c5be44efdba6a573e97327cf4';
-    var feed = new Instafeed({
-      get: 'user',
-      userId: u_id,
-      accessToken: token,
-      clientId: '9b2b91b4679542d3a28022b8661cfba1',
-      template: '<div style="width: 31%; margin-bottom: 3.3333333333%;"><a href="{{link}}"><img style="display: block;" src="{{image}}" /></a></div>',
-      limit: 18
-    });
-    feed.run();
 
   // Use this variable to set up the common and page specific functions. If you
   // rename this variable, you will also need to rename the namespace below.
@@ -84,42 +73,5 @@
 
   // Load Events
   $(document).ready(UTIL.loadEvents);
-
-  var imageURLS = $('.post').children('img').map(function(){
-    return $(this).attr('src');
-  }).get();
-
-  $('.post').children('img').map(function(image, i){
-    console.log(image);
-    $(this).attr('data-zoom-padding', '0');
-    $(this).attr('data-zoom-url', imageURLS[image]);
-    $(this).attr('data-zoom-overlay', 'true');
-  });
-
-  var drawerOpen = false;
-
-  $('.mobile-nav-touchable').click(function() {
-    this.drawerOpen = !this.drawerOpen;
-
-    $('.nav-primary').toggleClass('nav-visible');
-    if (this.drawerOpen) {
-      $('.nav-primary').animate({ opacity: 1 }, 200);
-      $('.nav-primary').css({ zIndex: 1 });
-      $('.mobile-nav-touchable').css({ transform: 'rotate(90deg)' });
-      $('.mobile-nav-touchable div').css({ marginTop: 0, transform: 'rotate(-45deg)', transition: 'transform ' + '200ms 200ms' });
-      $('.mobile-nav-touchable div:first').css({ transform: 'rotate(45deg)' });
-
-      $('.menu-item').css({ opacity: 1, transform: 'translateY(0)' });
-    } else {
-      $('.nav-primary').animate({ opacity: 0 }, 200, function() {
-        $('.nav-primary').css({ zIndex: -1 });
-      });
-      $('.mobile-nav-touchable').css({ transform: 'rotate(0deg)' });
-      $('.mobile-nav-touchable div').css({ marginTop: 4, transform: 'rotate(0deg)', transition: 'transform ' + '400ms' });
-      $('.mobile-nav-touchable div:first').css({ marginTop: -4, transform: 'rotate(0deg)' });
-
-      $('.menu-item').css({ opacity: 0, transform: 'translateY(56px)' });
-    }
-  });
 
 })(jQuery); // Fully reference jQuery after this point.
