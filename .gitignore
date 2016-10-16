@@ -15,7 +15,6 @@ db-sync
 sql-dump-*.sql
 
 # Dotenv
-.env
 .env.*
 !.env.example
 
