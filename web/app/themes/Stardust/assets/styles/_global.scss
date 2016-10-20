@@ -180,6 +180,7 @@ p {
 
 .main {
   max-width: 704px;
+  margin-bottom: 120px;
 }
 
 .sidebar {
@@ -212,6 +213,10 @@ p {
 .post img {
   margin-bottom: 32px;
   cursor: zoom-in;
+}
+
+.entry-content {
+  margin-bottom: 24px;
 }
 
 .sidebar-divider {
