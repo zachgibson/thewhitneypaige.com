@@ -109,21 +109,23 @@ p {
 
 .nav-visible {
   top: 0;
+  background-color: $brand;
 }
 
 .mobile-nav-touchable {
   cursor: pointer;
   position: fixed;
   top: 16px;
-  right: 24px;
+  right: 16px;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   z-index: 2;
-  width: 56px;
-  height: 56px;
-  background-color: white;
+  width: 48px;
+  height: 48px;
+  background-color: $brand;
+  border-radius: 50%;
   transition: transform 200ms cubic-bezier(0.4, 0.01, 0.165, 0.99);
 
   @media screen and (min-width: 640px) {
@@ -146,10 +148,11 @@ p {
 }
 
 .mobile-nav-touchable div {
-  width: 32px;
+  width: 24px;
   height: 3px;
-  margin: 3px auto;
-  background-color: $brand;
+  margin: 2px auto;
+  background-color: white;
+  border-radius: 1.5px;
 }
 
 .menu-item {
@@ -177,7 +180,7 @@ p {
   font-family: 'Tiempos Headline';
   font-size: 15px;
   font-weight: 600;
-  color: $grayDark;
+  color: white;
 
   &:hover { color: $brand; }
 
