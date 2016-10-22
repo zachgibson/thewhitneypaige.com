@@ -106,7 +106,7 @@
       $('.nav-primary').animate({ opacity: 1 }, 200);
       $('.nav-primary').css({ zIndex: 1 });
       $('.mobile-nav-touchable').css({ transform: 'rotate(90deg)' });
-      $('.mobile-nav-touchable div').css({ marginTop: 0, transform: 'rotate(-45deg)', transition: 'transform ' + '200ms 200ms' });
+      $('.mobile-nav-touchable div').css({ margin: '-1px auto', transform: 'rotate(-45deg)', transition: 'transform ' + '200ms 200ms' });
       $('.mobile-nav-touchable div:first').css({ transform: 'rotate(45deg)' });
 
       $('.menu-item').css({ opacity: 1, transform: 'translateY(0)' });
@@ -115,8 +115,8 @@
         $('.nav-primary').css({ zIndex: -1 });
       });
       $('.mobile-nav-touchable').css({ transform: 'rotate(0deg)' });
-      $('.mobile-nav-touchable div').css({ marginTop: 4, transform: 'rotate(0deg)', transition: 'transform ' + '400ms' });
-      $('.mobile-nav-touchable div:first').css({ marginTop: -4, transform: 'rotate(0deg)' });
+      $('.mobile-nav-touchable div').css({ margin: '3px auto', transform: 'rotate(0deg)', transition: 'transform ' + '400ms' });
+      $('.mobile-nav-touchable div:first').css({ transform: 'rotate(0deg)' });
 
       $('.menu-item').css({ opacity: 0, transform: 'translateY(56px)' });
     }
