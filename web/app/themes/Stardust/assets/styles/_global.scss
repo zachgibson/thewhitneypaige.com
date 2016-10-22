@@ -135,15 +135,16 @@ p {
 
 @keyframes spring {
   0.00% {transform: translate3d(-32px, -64px, 0) scale(0.5733333333333333);}
-  27.27% {transform: translate3d(2.145px, 4.29px, 0) scale(1.0286);}
-  63.64% {transform: translate3d(-0.095px, -0.19px, 0) scale(0.9987333333333334);}
-  100.00% {transform: translate3d(0.005px, 0.01px, 0) scale(1.0000666666666667);}
+  21.20% {transform: translate3d(4.545px, 9.09px, 0) scale(1.0606);}
+  47.47% {transform: translate3d(-0.515px, -1.03px, 0) scale(0.9931333333333333);}
+  73.73% {transform: translate3d(0.06px, 0.12px, 0) scale(1.0008);}
+  100.00% {transform: translate3d(-0.005px, -0.01px, 0) scale(0.9999333333333333);}
 }
 
 .spring {
   opacity: 1;
   animation: spring;
-  animation-duration: 0.86s;
+  animation-duration: 0.92s;
   animation-delay: 200ms;
   animation-timing-function: cubic-bezier(0.445,  0.050, 0.550, 0.950);
 }
