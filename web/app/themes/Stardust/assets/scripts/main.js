@@ -122,4 +122,6 @@
     }
   });
 
+  if ($(window).width() < 640) { $('.gucci').appendTo('.nav'); }
+
 })(jQuery); // Fully reference jQuery after this point.
