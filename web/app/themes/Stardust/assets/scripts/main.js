@@ -124,7 +124,9 @@
 
   if ($(window).width() < 640) {
     $('.gucci').appendTo('.nav');
-    $('.gucci a').css({ backgroundColor: 'white', height: 40, width: 40, display: 'flex', justifyContent: 'center', borderRadius: '50%' });
+    $('.gucci').css({ display: 'flex' });
+    $('.gucci a').css({ display: 'flex', justifyContent: 'center', height: 40, width: 40, margin: 16, backgroundColor: 'white', borderRadius: '50%' });
+    $('.gucci a img').css({ margin: 0 });
   }
 
 })(jQuery); // Fully reference jQuery after this point.
