@@ -180,17 +180,18 @@ p {
   font-family: 'Tiempos Headline';
   font-size: 15px;
   font-weight: 600;
-  color: white;
+  color: $grayDark;
 
   &:hover { color: $brand; }
 
   @media screen and (max-width: 640px) {
     font-size: 32px;
     font-weight: 900;
+    color: white;
   }
 }
 
-.current-menu-item a { color: $brand; }
+.current-menu-item a { color: rgba($grayDark, 0.64); }
 
 .main {
   max-width: 704px;
