@@ -122,6 +122,9 @@
     }
   });
 
-  if ($(window).width() < 640) { $('.gucci').appendTo('.nav'); }
+  if ($(window).width() < 640) {
+    $('.gucci').appendTo('.nav');
+    $('.gucci a').css({ backgroundColor: 'white', height: 40, width: 40, display: 'flex', justifyContent: 'center', borderRadius: '50%' });
+  }
 
 })(jQuery); // Fully reference jQuery after this point.
