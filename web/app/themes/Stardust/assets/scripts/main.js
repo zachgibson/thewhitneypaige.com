@@ -103,7 +103,7 @@
 
     $('.nav-primary').toggleClass('nav-visible');
     if (this.drawerOpen) {
-      $('.nav-primary').animate({ opacity: 1 }, 150);
+      $('.nav-primary').animate({ opacity: 1 }, 300, 'swing');
       $('.nav-primary').css({ zIndex: 1 });
       $('.mobile-nav-touchable').css({ transform: 'rotate(90deg)' });
       $('.mobile-nav-touchable div').css({ margin: '-1.5px auto', transform: 'rotate(-45deg)', transition: 'transform ' + '200ms 200ms' });
@@ -111,7 +111,7 @@
 
       $('.menu-item').css({ opacity: 1 });
     } else {
-      $('.nav-primary').animate({ opacity: 0 }, 150, function() {
+      $('.nav-primary').animate({ opacity: 0 }, 300, 'swing', function() {
         $('.nav-primary').css({ zIndex: -1 });
       });
       $('.mobile-nav-touchable').css({ transform: 'rotate(0deg)' });
