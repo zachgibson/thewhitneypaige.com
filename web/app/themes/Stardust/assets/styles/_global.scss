@@ -129,11 +129,11 @@ p {
 }
 
 @keyframes spring {
-  0.00% {transform: translate3d(-32px, -64px, 0) scale(0.5733333333333333);}
-  21.20% {transform: translate3d(4.545px, 9.09px, 0) scale(1.0606);}
-  47.47% {transform: translate3d(-0.515px, -1.03px, 0) scale(0.9931333333333333);}
-  73.73% {transform: translate3d(0.06px, 0.12px, 0) scale(1.0008);}
-  100.00% {transform: translate3d(-0.005px, -0.01px, 0) scale(0.9999333333333333);}
+  0.00% {transform: translate3d(-64px, -64px, 0) scale(0.5733333333333333);}
+  21.20% {transform: translate3d(9.09px, 9.09px, 0) scale(1.0606);}
+  47.47% {transform: translate3d(-1.03px, -1.03px, 0) scale(0.9931333333333333);}
+  73.73% {transform: translate3d(0.12px, 0.12px, 0) scale(1.0008);}
+  100.00% {transform: translate3d(-0.01px, -0.01px, 0) scale(0.9999333333333333);}
 }
 
 .spring {
