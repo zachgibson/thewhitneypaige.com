@@ -90,7 +90,6 @@
   }).get();
 
   $('.post').children('img').map(function(image, i){
-    console.log(image);
     $(this).attr('data-zoom-padding', '0');
     $(this).attr('data-zoom-url', imageURLS[image]);
     $(this).attr('data-zoom-overlay', 'true');
