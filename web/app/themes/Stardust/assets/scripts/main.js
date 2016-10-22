@@ -122,11 +122,4 @@
     }
   });
 
-  if ($(window).width() < 640) {
-    $('.gucci').appendTo('.nav-primary');
-    $('.gucci').css({ position: 'absolute', bottom: 0, display: 'flex', flex: 1, justifyContent: 'space-around', width: '100%' });
-    $('.gucci a').css({ display: 'flex', flex: 1, justifyContent: 'center', margin: 32, backgroundColor: 'white' });
-    $('.gucci a img').css({ margin: 0 });
-  }
-
 })(jQuery); // Fully reference jQuery after this point.
