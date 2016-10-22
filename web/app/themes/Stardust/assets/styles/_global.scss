@@ -28,12 +28,15 @@ em {
 }
 
 .container {
-  display: flex;
-  justify-content: space-between;
   max-width: 1008px;
   margin: auto;
   padding-left: 16px;
   padding-right: 16px;
+
+  @media screen and (min-width: 640px) {
+    display: flex;
+    justify-content: space-between;
+  }
 }
 
 h2 {
@@ -205,7 +208,10 @@ p {
   max-width: 240px;
   padding-left: 16px;
 
-  @media screen and (max-width: 480px) { display: none; }
+  @media screen and (max-width: 640px) {
+    margin: auto;
+    padding: 0;
+  }
 }
 
 .entry-title {
