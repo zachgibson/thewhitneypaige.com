@@ -131,32 +131,44 @@ p {
   }
 }
 
+@keyframes spring {
+  0.00% {transform: translate3d(32px, 64.00px, 0) scale(0.5733333333333333);}
+  27.27% {transform: translate3d(-2.145px, -4.29px, 0) scale(1.0286);}
+  63.64% {transform: translate3d(0.095px, 0.19px, 0) scale(0.9987333333333334);}
+  100.00% {transform: translate3d(-0.005px, -0.01px, 0) scale(1.0000666666666667);}
+}
+.spring {
+  opacity: 1;
+  animation: spring;
+  animation-duration: 0.86s;
+  animation-timing-function: cubic-bezier(0.445,  0.050, 0.550, 0.950);
+}
+
 .mobile-nav-touchable div {
   width: 32px;
   height: 3px;
   margin: 3px auto;
   background-color: $brand;
-  transition: transform 175ms 175ms;
 }
 
 .menu-item {
   padding-top: 16px;
   padding-bottom: 16px;
+  transition: opacity 200ms;
+  transition-delay: 200ms;
   
   @media screen and (max-width: 640px) {
-    transform: translateY(45.36px);
     opacity: 0;
   }
 }
 
 .nav-visible .menu-item {
-  transition: all 200ms cubic-bezier(0.18, 0.89, 0.32, 1.28);
-  &:nth-child(1) { transition-delay: 50ms }
-  &:nth-child(2) { transition-delay: 100ms }
-  &:nth-child(3) { transition-delay: 150ms }
-  &:nth-child(4) { transition-delay: 200ms }
-  &:nth-child(5) { transition-delay: 250ms }
-  &:nth-child(6) { transition-delay: 300ms }
+  &:nth-child(1) { animation-delay: 0ms }
+  &:nth-child(2) { animation-delay: 40ms }
+  &:nth-child(3) { animation-delay: 80ms }
+  &:nth-child(4) { animation-delay: 120ms }
+  &:nth-child(5) { animation-delay: 160ms }
+  &:nth-child(6) { animation-delay: 200ms }
 }
 
 .menu-item a {
