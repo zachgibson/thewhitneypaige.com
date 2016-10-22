@@ -106,7 +106,7 @@
       $('.nav-primary').animate({ opacity: 1 }, 150);
       $('.nav-primary').css({ zIndex: 1 });
       $('.mobile-nav-touchable').css({ transform: 'rotate(90deg)' });
-      $('.mobile-nav-touchable div').css({ margin: '-1px auto', transform: 'rotate(-45deg)', transition: 'transform ' + '200ms 200ms' });
+      $('.mobile-nav-touchable div').css({ margin: '-1.5px auto', transform: 'rotate(-45deg)', transition: 'transform ' + '200ms 200ms' });
       $('.mobile-nav-touchable div:first').css({ transform: 'rotate(45deg)' });
 
       $('.menu-item').css({ opacity: 1 });

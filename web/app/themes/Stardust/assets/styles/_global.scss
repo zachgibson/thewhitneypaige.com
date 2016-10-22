@@ -144,6 +144,7 @@ p {
   opacity: 1;
   animation: spring;
   animation-duration: 0.86s;
+  animation-delay: 200ms;
   animation-timing-function: cubic-bezier(0.445,  0.050, 0.550, 0.950);
 }
 
