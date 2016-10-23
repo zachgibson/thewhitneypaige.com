@@ -104,7 +104,6 @@ p {
     top: 0;
     height: 100vh;
     background-color: $brand;
-    transition: top 200ms cubic-bezier(0.65, 0.05, 0.36, 1);
     left: 0;
     right: 0;
   }
@@ -123,7 +122,6 @@ p {
   width: 48px;
   height: 48px;
   background-color: $brand;
-  border-radius: 50%;
   transition: transform 300ms cubic-bezier(0.22, 0.61, 0.36, 1);
 
   @media screen and (min-width: 640px) {
@@ -132,11 +130,10 @@ p {
 }
 
 @keyframes spring {
-  0.00% {transform: translate3d(-64px, -64px, 0) scale(0.5733333333333333);}
-  21.20% {transform: translate3d(9.09px, 9.09px, 0) scale(1.0606);}
-  47.47% {transform: translate3d(-1.03px, -1.03px, 0) scale(0.9931333333333333);}
-  73.73% {transform: translate3d(0.12px, 0.12px, 0) scale(1.0008);}
-  100.00% {transform: translate3d(-0.01px, -0.01px, 0) scale(0.9999333333333333);}
+  0.00% {transform: translate3d(0, 56.00px, 0) scale(0.43999999999999995);}
+  26.93% {transform: translate3d(0, -3.09px, 0) scale(1.0309);}
+  63.47% {transform: translate3d(0, 0.10px, 0) scale(0.999);}
+  100.00% {transform: translate3d(0, -0.00px, 0) scale(1);}
 }
 
 .spring {
@@ -151,7 +148,6 @@ p {
   height: 3px;
   margin: 3px auto;
   background-color: white;
-  border-radius: 1.5px;
   transition: transform 150ms cubic-bezier(0.22, 0.61, 0.36, 1);
 }
 
@@ -160,12 +156,12 @@ p {
   padding-bottom: 16px;
   transition: opacity 200ms;
   
-  &:nth-child(1) { transition-delay: 0ms }
-  &:nth-child(2) { transition-delay: 40ms }
-  &:nth-child(3) { transition-delay: 80ms }
-  &:nth-child(4) { transition-delay: 120ms }
-  &:nth-child(5) { transition-delay: 160ms }
-  &:nth-child(6) { transition-delay: 200ms }
+  &:nth-child(1) { transition-delay: 80ms }
+  &:nth-child(2) { transition-delay: 120ms }
+  &:nth-child(3) { transition-delay: 160ms }
+  &:nth-child(4) { transition-delay: 180ms }
+  &:nth-child(5) { transition-delay: 200ms }
+  &:nth-child(6) { transition-delay: 213ms }
   
   @media screen and (max-width: 640px) {
     opacity: 0;
@@ -173,12 +169,12 @@ p {
 }
 
 .nav-visible .menu-item {
-  &:nth-child(1) { animation-delay: 0ms }
-  &:nth-child(2) { animation-delay: 40ms }
-  &:nth-child(3) { animation-delay: 80ms }
-  &:nth-child(4) { animation-delay: 120ms }
-  &:nth-child(5) { animation-delay: 160ms }
-  &:nth-child(6) { animation-delay: 200ms }
+  &:nth-child(1) { animation-delay: 80ms }
+  &:nth-child(2) { animation-delay: 120ms }
+  &:nth-child(3) { animation-delay: 160ms }
+  &:nth-child(4) { animation-delay: 180ms }
+  &:nth-child(5) { animation-delay: 200ms }
+  &:nth-child(6) { animation-delay: 213ms }
 }
 
 .menu-item a {
@@ -197,7 +193,14 @@ p {
   }
 }
 
-.current-menu-item a { color: rgba($grayDark, 0.64); }
+.current-menu-item a {
+  color: $brand;
+
+  @media screen and (max-width: 640px) {
+    font-style: italic;
+    color: white;
+  }
+}
 
 .main {
   max-width: 704px;
