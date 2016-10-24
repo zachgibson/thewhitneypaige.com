@@ -91,8 +91,8 @@
   if ($('.nav-links')) {
     $('.nav-links').addClass('container');
     $('.nav-links').css({ paddingBottom: 120 });
-    $('.nav-previous a').replaceWith('👈 Older Posts');
-    $('.nav-next a').replaceWith('Newer Posts 👉');
+    $('.nav-previous a').text('👈 Older Posts');
+    $('.nav-next a').text('Newer Posts 👉');
   }
 
   // Loop through post images and add data uris for ZoomImage JS
