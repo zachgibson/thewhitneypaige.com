@@ -18,6 +18,10 @@ img {
   height: auto;
 }
 
+strong {
+  font-weight: bold;
+}
+
 em {
   font-style: italic;
 }
@@ -39,15 +43,25 @@ em {
   }
 }
 
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Tiempos Headline';
+  color: $grayDark;
+}
+
 h2 {
   // font-size: 32px;
   // font-weight: bolder;
   // letter-spacing: -0.4px;
 }
 
+h3 {
+  font-size: 24px;
+  margin-bottom: 8px;
+}
+
 h4 {
   margin-bottom: 16px;
-  font-family: 'Tiempos Headline';
+  // font-family: 'Tiempos Headline';
   font-size: 19px;
   font-weight: 900;
 }
@@ -229,6 +243,10 @@ p {
   color: $grayDark;
 }
 
+.post {
+  margin-bottom: 120px;
+}
+
 .post-meta {
   margin-bottom: 32px;
   font-size: 11px;
@@ -238,6 +256,7 @@ p {
 }
 
 .post img {
+  display: block;
   margin-bottom: 32px;
   cursor: zoom-in;
 }
