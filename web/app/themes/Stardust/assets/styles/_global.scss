@@ -26,6 +26,10 @@ em {
   font-style: italic;
 }
 
+.screen-reader-text {
+  display: none;
+}
+
 .outer-container {
   max-width: 1280px;
   margin: auto;
