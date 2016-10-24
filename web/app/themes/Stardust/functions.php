@@ -21,6 +21,7 @@ $sage_includes = [
   'lib/svg.php', // Add SVG support
   // 'lib/remove-p-tag.php', // Stops auto adding p tag from 'the content'
   'lib/acf-custom-options.php', // Changes ACF options page title
+  'lib/post-navigation.php' // Customizes post navigation
 ];
 
 foreach ($sage_includes as $file) {
