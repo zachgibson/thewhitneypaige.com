@@ -19,7 +19,7 @@ $sage_includes = [
   'lib/time-ago.php', // Time format helper
   'lib/options-page.php', // ACF options page
   'lib/svg.php', // Add SVG support
-  'lib/remove-p-tag.php', // Stops auto adding p tag from 'the content'
+  // 'lib/remove-p-tag.php', // Stops auto adding p tag from 'the content'
   'lib/acf-custom-options.php', // Changes ACF options page title
 ];
 
