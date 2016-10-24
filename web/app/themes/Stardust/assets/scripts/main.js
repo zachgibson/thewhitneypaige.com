@@ -85,6 +85,10 @@
   // Load Events
   $(document).ready(UTIL.loadEvents);
 
+  // Move post nav out of container
+  $('.posts-navigation').appendTo('.outer-container');
+
+  // Loop through post images and add data uris for ZoomImage JS
   var imageURLS = $('.post p').children('img').map(function(){
     return $(this).attr('src');
   }).get();
@@ -95,6 +99,7 @@
     $(this).attr('data-zoom-overlay', 'true');
   });
 
+  // Mobile nav drawer
   var drawerOpen = false;
 
   $('.mobile-nav-touchable').click(function() {
