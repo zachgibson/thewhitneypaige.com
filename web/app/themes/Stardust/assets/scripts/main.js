@@ -85,11 +85,11 @@
   // Load Events
   $(document).ready(UTIL.loadEvents);
 
-  var imageURLS = $('.post').children('img').map(function(){
+  var imageURLS = $('.post p').children('img').map(function(){
     return $(this).attr('src');
   }).get();
 
-  $('.post').children('img').map(function(image, i){
+  $('.post p').children('img').map(function(image, i){
     $(this).attr('data-zoom-padding', '0');
     $(this).attr('data-zoom-url', imageURLS[image]);
     $(this).attr('data-zoom-overlay', 'true');
