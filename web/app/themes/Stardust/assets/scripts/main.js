@@ -88,6 +88,13 @@
   // Move post nav out of container
   $('.posts-navigation').appendTo('.outer-container');
 
+  if ($('.nav-links')) {
+    $('.nav-links').addClass('container');
+    $('.nav-links').css({ paddingBottom: 120 });
+    $('.nav-previous a').replaceWith('👈 Older Posts');
+    $('.nav-next a').replaceWith('Newer Posts 👉');
+  }
+
   // Loop through post images and add data uris for ZoomImage JS
   var imageURLS = $('.post p').children('img').map(function(){
     return $(this).attr('src');
