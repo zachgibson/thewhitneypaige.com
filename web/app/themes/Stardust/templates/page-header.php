@@ -1,5 +1,7 @@
 <?php use Roots\Sage\Titles; ?>
 
-<div class="page-header">
-  <h1><?= Titles\title(); ?></h1>
-</div>
+<?php if(!is_front_page() && !is_page('About') && !is_page('Contact')) { ?>
+  <div class="page-header">
+    <h3><?= Titles\title(); ?></h3>
+  </div>
+<?php } ?>
