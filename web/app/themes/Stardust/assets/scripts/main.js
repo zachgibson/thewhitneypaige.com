@@ -95,6 +95,15 @@
     $('.nav-next a').text('Newer Posts 👉');
   }
 
+  $('.search-icon').click(function() {
+    $('.search-form').css({ display: 'block' });
+    $('#searchform input').focus();
+
+    $('.x').click(function() {
+      $('.search-form').css({ display: 'none' });
+    });
+  });
+
   // Loop through post images and add data uris for ZoomImage JS
   var imageURLS = $('.post p').children('img').map(function(){
     return $(this).attr('src');

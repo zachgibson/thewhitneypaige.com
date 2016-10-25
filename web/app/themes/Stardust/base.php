@@ -18,6 +18,13 @@ use Roots\Sage\Wrapper;
       do_action('get_header');
       get_template_part('templates/header');
     ?>
+    <div class="search-form">
+      <img class="x" src="<?= get_template_directory_uri(); ?>/dist/images/x.svg">
+      <form role="search" method="get" id="searchform" action="<?php echo home_url( '/' ); ?>">
+        <p>Press enter to search</p>
+        <input type="text" value="" name="s" id="s" placeholder="What’re you looking for? 🤔" />
+      </form>
+    </div>
     <div class="outer-container">
       <div class="container" role="document">
         <main class="main">
