@@ -4,4 +4,5 @@
     <?php get_template_part('templates/entry-meta'); ?>
   </header>
   <?php the_content(); ?>
+  <?php if( function_exists('dot_irecommendthis') ) dot_irecommendthis(); ?>
 </article>

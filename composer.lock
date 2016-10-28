@@ -4,8 +4,8 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "4c61491f94676975206c009fdef7c067",
-    "content-hash": "928d2375ab0c3cb1ec554b032ba5f816",
+    "hash": "3342ede0a915a82ff55d44703647a08b",
+    "content-hash": "9a7c4477f5692ce0c422256965a29259",
     "packages": [
         {
             "name": "composer/installers",
@@ -340,6 +340,26 @@
                 "environment"
             ],
             "time": "2016-09-01 10:05:43"
+        },
+        {
+            "name": "wpackagist-plugin/i-recommend-this",
+            "version": "3.7.7",
+            "source": {
+                "type": "svn",
+                "url": "https://plugins.svn.wordpress.org/i-recommend-this/",
+                "reference": "tags/3.7.7"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://downloads.wordpress.org/plugin/i-recommend-this.3.7.7.zip",
+                "reference": null,
+                "shasum": null
+            },
+            "require": {
+                "composer/installers": "~1.0"
+            },
+            "type": "wordpress-plugin",
+            "homepage": "https://wordpress.org/plugins/i-recommend-this/"
         },
         {
             "name": "wpackagist-plugin/wp-markdown-editor",
