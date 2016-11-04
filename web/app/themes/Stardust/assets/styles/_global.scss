@@ -10,6 +10,8 @@ a {
   text-decoration: none;
   transition: color 150ms;
 
+  img { display: block; }
+
   &:hover { color: darken($brand, 10) }
 }
 
