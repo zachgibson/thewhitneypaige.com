@@ -8,16 +8,14 @@
   <div>
     <?php if( have_rows('social_links', 'option') ): ?>
 
-      <div class="gucci">
-
+      <div class="social-links">
         <?php while( have_rows('social_links', 'option') ): the_row();
           $image = get_sub_field('image');
         ?>
           <a href="<?php the_sub_field('link'); ?>">
-            <img class="social-icon" src="<?php echo $image['url']; ?>" />
+            <img src="<?php echo $image['url']; ?>" />
           </a>
         <?php endwhile; ?>
-
       </div>
 
     <?php endif; ?>

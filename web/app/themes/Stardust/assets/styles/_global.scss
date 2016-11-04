@@ -284,9 +284,16 @@ article {
   margin-bottom: 24px;
 }
 
+.social-links {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  margin: 24px;
+}
+
 .sidebar-divider {
-  margin-top: 32px;
-  margin-bottom: 32px;
+  margin-top: 16px;
+  margin-bottom: 16px;
 }
 
 .profile-image-border {
@@ -316,12 +323,6 @@ article {
   font-style: italic;
   line-height: 14px;
   text-transform: uppercase;
-}
-
-.social-icon {
-  margin-top: 16px;
-  margin-left: 12px;
-  margin-right: 12px;
 }
 
 // #instafeed {
