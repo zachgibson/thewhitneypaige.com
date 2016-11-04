@@ -324,7 +324,22 @@ article {
   margin-right: 12px;
 }
 
-#instafeed {
+// #instafeed {
+//   display: flex;
+//   justify-content: space-between;
+//   flex-wrap: wrap;
+// }
+
+// .instafeed-title {
+//   text-align: left;
+// }
+
+#instagramFooterFeed {
+  display: flex;
+  align-items: flex-end;
+  margin-bottom: 80px;
+}
+
 .post-actions {
   display: flex;
   padding: 16px;
@@ -368,8 +383,6 @@ article {
   cursor: pointer;
 }
 
-.instafeed-title {
-  text-align: left;
 .dot-irecommendthis {
   position: relative;
   display: block;
