@@ -2,6 +2,6 @@
 
 <?php if(!is_front_page() && !is_page('About') && !is_page('Contact')) { ?>
   <div class="page-header">
-    <h3><?= Titles\title(); ?></h3>
+    <h1 class="page-title"><?= Titles\title(); ?></h1>
   </div>
 <?php } ?>
