@@ -136,11 +136,11 @@
   });
 
   // Loop through post images and add data uris for ZoomImage JS
-  var imageURLS = $('.post p').children('img').map(function(){
+  var imageURLS = $('.post p').children('.alignnone').map(function(){
     return $(this).attr('src');
   }).get();
 
-  $('.post p').children('img').map(function(image, i){
+  $('.post p').children('.alignnone').map(function(image, i) {
     $(this).attr('data-zoom-padding', '0');
     $(this).attr('data-zoom-url', imageURLS[image]);
     $(this).attr('data-zoom-overlay', 'true');
