@@ -12,16 +12,30 @@
 
 (function($) {
   var u_id = parseInt('1428121');
-    var token = '1428121.9b2b91b.62214e2c5be44efdba6a573e97327cf4';
-    var feed = new Instafeed({
-      get: 'user',
-      userId: u_id,
-      accessToken: token,
-      clientId: '9b2b91b4679542d3a28022b8661cfba1',
-      template: '<div style="width: 31%; margin-bottom: 3.3333333333%;"><a href="{{link}}"><img style="display: block;" src="{{image}}" /></a></div>',
-      limit: 18
-    });
-    feed.run();
+  var token = '1428121.9b2b91b.62214e2c5be44efdba6a573e97327cf4';
+  var id = '9b2b91b4679542d3a28022b8661cfba1';
+    
+  // var sideBarFeed = new Instafeed({
+  //   get: 'user',
+  //   userId: u_id,
+  //   accessToken: token,
+  //   clientId: id,
+  //   template: '<div style="width: 31%; margin-bottom: 3.3333333333%;"><a href="{{link}}"><img style="display: block;" src="{{image}}" /></a></div>',
+  //   limit: 18
+  // });
+  // sideBarFeed.run();
+
+  var footerFeed = new Instafeed({
+    get: 'user',
+    userId: u_id,
+    accessToken: token,
+    clientId: id,
+    template: '<a style="width: 14.285714286%; height: ' + Math.ceil($(window).width()/7) + 'px; display: block;background-size: cover;background-position: center center;background-repeat: no-repeat; background-image: url(https:{{image}})" href="{{link}}"></a>',
+    resolution: 'standard_resolution',
+    limit: 7,
+    target: 'instagramFooterFeed'
+  });
+  footerFeed.run();
 
   // Use this variable to set up the common and page specific functions. If you
   // rename this variable, you will also need to rename the namespace below.

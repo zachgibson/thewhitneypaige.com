@@ -37,6 +37,7 @@ use Roots\Sage\Wrapper;
         <?php endif; ?>
       </div><!-- /.wrap -->
     </div>
+    <div id="instagramFooterFeed"></div>
     <?php
       do_action('get_footer');
       get_template_part('templates/footer');
