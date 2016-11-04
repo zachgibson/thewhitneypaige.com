@@ -11,6 +11,23 @@
  * ======================================================================== */
 
 (function($) {
+  window.twttr = (function(d, s, id) {
+    var js, fjs = d.getElementsByTagName(s)[0],
+      t = window.twttr || {};
+    if (d.getElementById(id)) return t;
+    js = d.createElement(s);
+    js.id = id;
+    js.src = "https://platform.twitter.com/widgets.js";
+    fjs.parentNode.insertBefore(js, fjs);
+
+    t._e = [];
+    t.ready = function(f) {
+      t._e.push(f);
+    };
+
+    return t;
+  }(document, "script", "twitter-wjs"));
+
   var u_id = parseInt('1428121');
   var token = '1428121.9b2b91b.62214e2c5be44efdba6a573e97327cf4';
   var id = '9b2b91b4679542d3a28022b8661cfba1';
