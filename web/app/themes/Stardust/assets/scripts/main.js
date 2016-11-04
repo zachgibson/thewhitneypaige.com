@@ -180,6 +180,12 @@
     }
   });
 
+  if (window.location.hash === '#reply-title') {
+    setTimeout(function() {
+      $('#comment').focus();
+    }, 0);
+  }
+
   // Mobile nav drawer
   var drawerOpen = false;
 
