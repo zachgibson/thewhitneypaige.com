@@ -384,11 +384,14 @@ article {
 }
 
 .dot-irecommendthis {
-  position: relative;
+  width: 24px;
+  height: 20px;
+  margin-right: 16px;
+  padding-left: 28px;
+  background-size: 22px 20px;
   display: block;
-  padding: 0 24px;
-  top: -18px;
-  max-width: 24px;
+  background-image: url('../images/heart.svg');
+  background-repeat: no-repeat;
 }
 
 .comment {
