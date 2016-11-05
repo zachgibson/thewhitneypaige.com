@@ -76,7 +76,7 @@
     userId: u_id,
     accessToken: token,
     clientId: id,
-    template: '<a style="width: 14.285714286%; height: ' + Math.ceil($(window).width()/7) + 'px; display: block;background-size: cover;background-position: center center;background-repeat: no-repeat; background-image: url(https:{{image}})" href="{{link}}"></a>',
+    template: '<a style="width: 14%; height: ' + Math.ceil($(window).width()/7) + 'px; display: block; background-size: cover; background-position: center center; background-repeat: no-repeat; background-image: url(https:{{image}})" href="{{link}}"></a>',
     resolution: 'standard_resolution',
     limit: 7,
     target: 'instagramFooterFeed'

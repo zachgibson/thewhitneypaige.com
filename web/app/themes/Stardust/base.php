@@ -57,5 +57,13 @@ use Roots\Sage\Wrapper;
     <a class="up" href="#gucci">
       <img src="<?= get_template_directory_uri(); ?>/dist/images/up-arrow.svg">
     </a>
+    <div class="footer-container">
+      <div id="instagramFooterFeed"></div>
+      <?php
+        do_action('get_footer');
+        get_template_part('templates/footer');
+        wp_footer();
+      ?>
+    </div>
   </body>
 </html>

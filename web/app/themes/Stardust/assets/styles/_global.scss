@@ -335,12 +335,6 @@ article {
 //   text-align: left;
 // }
 
-#instagramFooterFeed {
-  display: flex;
-  align-items: flex-end;
-  margin-bottom: 80px;
-}
-
 .post-actions {
   display: flex;
   padding: 32px 16px;
@@ -459,6 +453,35 @@ article {
 
 .blow-kiss {
   transform: scale(1) translate(32px, 4px) rotate(0deg);
+}
+
+.footer-container {
+  // background-color: $brandSecondary;
+}
+
+.footer {
+  display: flex;
+  max-width: 1280px;
+  margin: 24px auto;
+
+  div {
+    flex: 1;
+    font-size: 14px;
+  }
+}
+
+.follow {
+  display: flex;
+  justify-content: flex-end;
+}
+
+#instagramFooterFeed {
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+  // margin-bottom: 80px;
+}
+
 .up {
   display: none;
   position: fixed;
