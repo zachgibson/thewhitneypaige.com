@@ -11,31 +11,6 @@
  * ======================================================================== */
 
 (function($) {
-  // Scroll to Top
-  $('a').click(function() {
-    if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') 
-      || location.hostname == this.hostname) {
-
-      var target = $(this.hash);
-      target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
-       if (target.length) {
-         $('html,body').animate({ scrollTop: target.offset().top }, 500);
-        return false;
-      }
-    }
-  });
-
-  $(function() {
-    $(window).scroll(function() {
-      var scrollVal = $(this).scrollTop();
-      if (scrollVal > 300) {
-        $('.up').fadeIn();
-      } else {
-        $('.up').fadeOut();
-      }
-    });
-  });
-
   window.twttr = (function(d, s, id) {
     var js, fjs = d.getElementsByTagName(s)[0],
       t = window.twttr || {};
@@ -182,27 +157,28 @@
     '</span>'
   ).insertBefore('.dot-irecommendthis');
 
-  $('.dot-irecommendthis').map(function() {
-    $('.active').css({ 'background-image': 'url("/app/themes/Stardust/dist/images/heart-filled.svg")' });
-  });
+  // $('.dot-irecommendthis').map(function() {
+  //   $('.active').css({ 'background-image': 'url("/app/themes/Stardust/dist/images/heart-filled.svg")' });
+  // });
 
   $('.dot-irecommendthis').bind('click', function() {
-    var emojiContainer = $(this).prev('.heart-container').children('.emoji-container');
+    var likeLink = $(this);
+    var emojiContainer = likeLink.prev('.heart-container').children('.emoji-container');
     var emoji = emojiContainer.children('.kissy-emoji');
     var emojiHeartFill = emojiContainer.children('.emoji-heart-fill');
 
-    if (!$(this).hasClass('active')) {
-      $(this).delay(900).animate({ 'background-size': 0 }, 0);
-      emojiContainer.addClass('animate-emoji-container');
+    if (likeLink.hasClass('active')) return false;
 
-      setTimeout(function(){
-        emojiHeartFill.addClass('blow-kiss');
-      }, 400);
+    likeLink.delay(900).animate({ 'background-size': 0 }, 0);
+    emojiContainer.addClass('animate-emoji-container');
 
-      setTimeout(function(){
-        emoji.addClass('hide-emoji');
-      }, 900);
-    }
+    setTimeout(function(){
+      emojiHeartFill.addClass('blow-kiss');
+    }, 400);
+
+    setTimeout(function(){
+      emoji.addClass('hide-emoji');
+    }, 900);
   });
 
   if (window.location.hash === '#reply-title') {
@@ -237,6 +213,31 @@
 
       $('.menu-item').css({ opacity: 0 });
     }
+  });
+
+  // Scroll to Top
+  $('a').click(function() {
+    if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') 
+      || location.hostname == this.hostname) {
+
+      var target = $(this.hash);
+      target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
+       if (target.length) {
+         $('html,body').animate({ scrollTop: target.offset().top }, 500);
+        return false;
+      }
+    }
+  });
+
+  $(function() {
+    $(window).scroll(function() {
+      var scrollVal = $(this).scrollTop();
+      if (scrollVal > 300) {
+        $('.up').fadeIn();
+      } else {
+        $('.up').fadeOut();
+      }
+    });
   });
 
 })(jQuery); // Fully reference jQuery after this point.
