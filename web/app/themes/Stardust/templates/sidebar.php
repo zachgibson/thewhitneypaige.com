@@ -21,6 +21,6 @@
     <?php endif; ?>
   </div>
   <div><img class="sidebar-divider" src="<?= get_template_directory_uri(); ?>/dist/images/divider.svg"></div>
-  <!-- <h4 class="instafeed-title">Instagram</h4> -->
-  <!-- <div id="instafeed"></div> -->
+  <h4 class="instafeed-title">Instagram</h4>
+  <div id="instafeed"></div>
 </div>

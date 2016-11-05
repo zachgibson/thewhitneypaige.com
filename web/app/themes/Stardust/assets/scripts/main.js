@@ -33,15 +33,15 @@
   var id = '9b2b91b4679542d3a28022b8661cfba1';
   var imagesLimit = 7;
     
-  // var sideBarFeed = new Instafeed({
-  //   get: 'user',
-  //   userId: u_id,
-  //   accessToken: token,
-  //   clientId: id,
-  //   template: '<div style="width: 31%; margin-bottom: 3.3333333333%;"><a href="{{link}}"><img style="display: block;" src="{{image}}" /></a></div>',
-  //   limit: 18
-  // });
-  // sideBarFeed.run();
+  var sideBarFeed = new Instafeed({
+    get: 'user',
+    userId: u_id,
+    accessToken: token,
+    clientId: id,
+    template: '<div style="width: 31%; margin-bottom: 3.3333333333%;"><a href="{{link}}"><img style="display: block;" src="{{image}}" /></a></div>',
+    limit: 18
+  });
+  sideBarFeed.run();
 
   var footerFeed = new Instafeed({
     get: 'user',
