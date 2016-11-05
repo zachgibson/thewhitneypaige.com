@@ -8,7 +8,7 @@ use Roots\Sage\Wrapper;
 <!doctype html>
 <html <?php language_attributes(); ?>>
   <?php get_template_part('templates/head'); ?>
-  <body <?php body_class(); ?>>
+  <body id="gucci" <?php body_class(); ?>>
     <script>
       window.fbAsyncInit = function() {
         FB.init({
@@ -54,11 +54,8 @@ use Roots\Sage\Wrapper;
         <?php endif; ?>
       </div><!-- /.wrap -->
     </div>
-    <div id="instagramFooterFeed"></div>
-    <?php
-      do_action('get_footer');
-      get_template_part('templates/footer');
-      wp_footer();
-    ?>
+    <a class="up" href="#gucci">
+      <img src="<?= get_template_directory_uri(); ?>/dist/images/up-arrow.svg">
+    </a>
   </body>
 </html>

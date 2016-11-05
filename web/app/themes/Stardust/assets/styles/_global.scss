@@ -459,4 +459,13 @@ article {
 
 .blow-kiss {
   transform: scale(1) translate(32px, 4px) rotate(0deg);
+.up {
+  display: none;
+  position: fixed;
+  bottom: 40px;
+  right: 48px;
+  font-size: 32px;
+  // background: pink;
+  // width: 80px;
+  // height: 80px;
 }
