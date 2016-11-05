@@ -28,11 +28,7 @@
   $(function() {
     $(window).scroll(function() {
       var scrollVal = $(this).scrollTop();
-      var fadeOutHeight = $(document).height();
-      var footerHeight = $('.footer-container').height();
-      fadeOutHeight = fadeOutHeight - (fadeOutHeight/4);
-
-      if (scrollVal > 300 && scrollVal < fadeOutHeight) {
+      if (scrollVal > 300) {
         $('.up').fadeIn();
       } else {
         $('.up').fadeOut();
