@@ -151,8 +151,8 @@
   if ($('.nav-links')) {
     $('.nav-links').addClass('container');
     $('.nav-links').css({ paddingBottom: 120 });
-    $('.nav-previous a').text('👈 Older Posts');
-    $('.nav-next a').text('Newer Posts 👉');
+    $('.nav-previous a').html('&larr; Older Posts');
+    $('.nav-next a').html('Newer Posts &rarr;');
   }
 
   $('.search-icon').click(function() {
