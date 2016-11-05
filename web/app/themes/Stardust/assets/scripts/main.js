@@ -157,9 +157,9 @@
     '</span>'
   ).insertBefore('.dot-irecommendthis');
 
-  // $('.dot-irecommendthis').map(function() {
-  //   $('.active').css({ 'background-image': 'url("/app/themes/Stardust/dist/images/heart-filled.svg")' });
-  // });
+  $('.dot-irecommendthis').map(function() {
+    $('.active').css({ 'background-image': 'url("/app/themes/Stardust/dist/images/heart-filled.svg")' });
+  });
 
   $('.dot-irecommendthis').bind('click', function() {
     var likeLink = $(this);
