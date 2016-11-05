@@ -56,6 +56,7 @@
   var u_id = parseInt('1428121');
   var token = '1428121.9b2b91b.62214e2c5be44efdba6a573e97327cf4';
   var id = '9b2b91b4679542d3a28022b8661cfba1';
+  var imagesLimit = 7;
     
   // var sideBarFeed = new Instafeed({
   //   get: 'user',
@@ -72,9 +73,9 @@
     userId: u_id,
     accessToken: token,
     clientId: id,
-    template: '<a style="width: 14%; height: ' + Math.ceil($(window).width()/7) + 'px; display: block; background-size: cover; background-position: center center; background-repeat: no-repeat; background-image: url(https:{{image}})" href="{{link}}"></a>',
+    template: '<a style="width: 14%; height: ' + Math.ceil($(window).width() / imagesLimit) + 'px; display: block; background-size: cover; background-position: center center; background-repeat: no-repeat; background-image: url(https:{{image}})" href="{{link}}"></a>',
     resolution: 'standard_resolution',
-    limit: 7,
+    limit: imagesLimit,
     target: 'instagramFooterFeed'
   });
   footerFeed.run();
