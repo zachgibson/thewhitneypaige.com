@@ -281,6 +281,10 @@ article {
   cursor: zoom-in;
 }
 
+@media screen and (max-width: 640px) {
+  .alignnone { margin-bottom: 16px; }
+}
+
 .entry-content {
   margin-bottom: 24px;
 }
