@@ -485,6 +485,7 @@ article {
 .up {
   display: none;
   position: fixed;
+  z-index: -1;
   bottom: 40px;
   right: 48px;
   font-size: 32px;
