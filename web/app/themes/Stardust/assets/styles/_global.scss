@@ -456,23 +456,36 @@ article {
 }
 
 .footer-container {
-  // background-color: $brandSecondary;
+  background-color: white;
 }
 
 .footer {
-  display: flex;
+  display: block;
   max-width: 1280px;
-  margin: 24px auto;
+  margin: auto;
+  padding: 24px 16px;
+  text-align: center;
 
   div {
-    flex: 1;
     font-size: 14px;
+    margin: 8px auto;
   }
 }
 
 .follow {
-  display: flex;
-  justify-content: flex-end;
+  display: block;
+}
+
+@media screen and (min-width: 640px) {
+  .footer {
+    display: flex;
+    text-align: left;
+  }
+  .follow {
+    display: flex;
+    flex: 1;
+    justify-content: flex-end;
+  }
 }
 
 #instagramFooterFeed {
