@@ -461,6 +461,8 @@ article {
 }
 
 .footer-container {
+  position: relative;
+  z-index: 1;
   background-color: white;
 }
 
@@ -503,11 +505,12 @@ article {
 .up {
   display: none;
   position: fixed;
-  z-index: -1;
+  z-index: 0;
   bottom: 40px;
   right: 48px;
   font-size: 32px;
-  // background: pink;
-  // width: 80px;
-  // height: 80px;
+}
+
+@media screen and (max-width: 640px) {
+  .up { right: 40px; }
 }
