@@ -48,7 +48,7 @@
     userId: u_id,
     accessToken: token,
     clientId: id,
-    template: '<a style="width: 14%; height: ' + Math.ceil($(window).width() / imagesLimit) + 'px; display: block; background-size: cover; background-position: center center; background-repeat: no-repeat; background-image: url(https:{{image}})" href="{{link}}"></a>',
+    template: '<a style="width: 14%; height: ' + Math.ceil($(window).width() / imagesLimit) + 'px; display: block; background-size: cover; background-position: center center; background-repeat: no-repeat; background-image: url(https:{{image}})" href="{{link}}" target="_blank"></a>',
     resolution: 'standard_resolution',
     limit: imagesLimit,
     target: 'instagramFooterFeed'
@@ -140,6 +140,10 @@
   var imageURLS = $('.post p').children('.alignnone').map(function(){
     return $(this).attr('src');
   }).get();
+
+  $('article').children('p').children('a').map(function() {
+    $(this).attr('target', '_blank');
+  });
 
   $('.post p').children('.alignnone').map(function(image, i) {
     $(this).attr('data-zoom-padding', '0');
