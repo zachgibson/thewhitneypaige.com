@@ -12,7 +12,7 @@
         <?php while( have_rows('social_links', 'option') ): the_row();
           $image = get_sub_field('image');
         ?>
-          <a href="<?php the_sub_field('link'); ?>">
+          <a href="<?php the_sub_field('link'); ?>" target="_blank">
             <img src="<?php echo $image['url']; ?>" />
           </a>
         <?php endwhile; ?>
